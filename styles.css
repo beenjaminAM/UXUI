@@ -1,0 +1,144 @@
+body {
+    background-color: #aaa; /* Gris oscuro de fondo */
+    color: #333; /* Texto blanco por defecto */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #fff; /* Color oscuro para la barra de navegación */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.barra-estado {
+    padding: 10px 20px;
+    color: #333;
+    border-bottom: #333 1px solid  ;
+    border-top: #333 1px solid  ;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-contenedor {
+    height: 250px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.catalogo-syllabus {
+    width: 95%; /* Ancho del div */
+    max-height: 80%; /* Alto del div */
+    padding: 10px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
+    background-color: #ccc; /* Color de fondo del div */
+    border-radius: 10px;
+    height: 500px;
+}
+
+.table-header input[type="text"] {
+    padding: 8px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-right: 10px; /* Margen derecho entre el input y el botón */
+}
+
+.table-header input[type="text"]:focus {
+    border-color: #999; /* Cambio de color del borde al enfocar el input */
+}
+
+
+.table-header button,
+.table-actions button,
+.table-footer button {
+    background-color: #585858; /* Color de fondo plomo */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin bordes */
+    padding: 8px 16px; /* Espaciado interno */
+    margin-right: 10px; /* Margen derecho entre botones */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+.table-header button:hover,
+.table-actions button:hover,
+.table-footer button {
+    background-color: #424242; /* Color de fondo plomo más oscuro al pasar el cursor */
+}
+
+.table-header {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-actions {
+    padding: 10px 0px;
+}
+
+.table-syllabus {
+    border-collapse: collapse; /*ndica que los bordes de las celdas se colapsan, es decir, se combinan para formar un solo borde entre celdas adyacentes*/
+    width: 100%;
+    height: 270px;
+    margin-bottom: 20px;
+}
+
+.table-syllabus tr a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.table-syllabus th, .table-syllabus td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.table-syllabus thead {
+    position: sticky;
+    top: 0;
+    background-color: #f5f5f5; /* Color de fondo de la cabecera */
+    z-index: 100; /* Para que la cabecera esté por encima del contenido desplazable */
+}
+
+.table-syllabus tr:hover {
+    background-color: #ddd; /* Color de fondo al pasar el cursor sobre una fila */
+}
+
+.table-footer {
+    padding: 10px 0px;
+}
