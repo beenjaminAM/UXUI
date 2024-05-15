@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    ImprimirTabla("table-contenedor"); 
-    console.log("Test");
+    ImprimirTabla("table-contenedor");
+
 
     // Agregar evento de escucha al input de búsqueda
     var searchInput = document.querySelector('input[name="search-course"]');

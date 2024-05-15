@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Syllabus</title>
+    <link rel="stylesheet" href="stylesRegistro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="imagenes/REALFISI.JPG" alt="" height="70"></div>
+        <ul class="menu">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Registro</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#"><object data="imagenes/notification-alert.svg" width="28" height="28"> </object></a></li>
+            <li><a href="#"><img src="imagenes/Sample_User_Icon.png" alt="" height="30"></a></li>
+        </ul>
+    </nav>
+    <div class="barra-estado">
+        Home / Registro
+    </div>
+    <main>
+        <div class="registro-syllabus">
+
+            <div class="table-header">
+                <h1>Generar Syllabu</h1>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="background-color: #ccc;">Informacion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Fundamentacion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Aprendizaje esperado</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Programacion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Normas de Evaluacion</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bibliografia</a>
+                </li>
+              </ul>
+            <form class="was-validated" id="miFormulario">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="formGroupExampleInput" class="form-label">Nombre del curso</label>
+                        <input type="text" class="form-control" id="curso" placeholder="Ingrese nombre del curso" required>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Codigo del Curso</label>
+                            <input type="text" class="form-control" id="codigo" placeholder="Ingrese Codigo del Curso" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="formGroupExampleInput" class="form-label">Facultad</label>
+                        <input type="text" class="form-control" id="facultad" placeholder="Ingrese la facultad" required>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Periodo Academico</label>
+                            <input type="text" class="form-control" id="periodo" placeholder="Ingrese el Periodo Academico" required> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="formGroupExampleInput" class="form-label">Escuela Profesional</label>
+                        <input type="text" class="form-control" id="escuela" placeholder="Ingrese la Escuela Profesional" required>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Ciclo</label>
+                            <input type="text" class="form-control" id="ciclo" placeholder="Ingrese el ciclo" required> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="formGroupExampleInput" class="form-label">Año</label>
+                        <input type="text" class="form-control" id="anio" placeholder="Ingrese el Año" required>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Credito</label>
+                            <input type="text" class="form-control" id="credito" placeholder="Ingrese el Credito" required> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="validationTextarea" class="form-label">Sumilla</label>
+                  <textarea class="form-control" id="sumilla" placeholder="Ingresar la sumilla" required></textarea>
+                  <div class="invalid-feedback">
+                    Por favor ingresa la sumilla.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="validationTextarea" class="form-label">Docente responsable</label>
+                </div>
+                <div class="mb-3">
+                    <select class="form-select" id="docente" required aria-label="select example">
+                      <option value="">Seleccionar docente</option>
+                      <option value="1">Arturo Alejandro Bartra</option>
+                      <option value="2">Mario Huapaya Chimpitaz</option>
+                      <option value="3">Victor Hugo Bustamante</option>
+                    </select>
+                    <div class="invalid-feedback">Selecciona un docente</div>
+                  </div>
+              
+                <div class="mb-3">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
+        </div>
+    </main>
+
+
+    <footer>
+
+    </footer>
+    <script src="registrar.js"></script>
+</body>
+
+</html>
